@@ -1,0 +1,370 @@
+/* @import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+/* Обнулення */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+html,
+body{
+	height: 100%;
+}
+body {
+	line-height: 1;
+
+}
+
+/* Шрифт */
+/* @font-face {
+	font-family: "";
+	src: url("../fonts/") format("woff2"), url("../fonts/") format("woff");
+	font-display: ;
+	font-weight: ;
+	font-style: ;
+	}
+  */
+
+/* -- */
+/* transition: all 0.3s ease 0s; */
+/* -- */
+/* 
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+ */
+body{
+font-family: "Lato";
+/* пишемо те що саме більше використовується (шрифт,колір) крім звичайних font-size 16px */
+color: #424551;
+}
+
+/* ======================= */
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+/* ====================== */
+/* Обмежуючий контейнер */
+[class*="__container"]{
+	/* +30px тому що padding 15 15 */
+	max-width: 1275px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* --------------- */
+.page {
+}
+
+.page__main {
+}
+.main-block {
+	padding: 90px 0;
+}
+.main-block__container {
+
+}
+.main-block__body {
+}
+.body-main {
+	display: flex;
+	flex-wrap: wrap;
+
+	gap: 105px;
+}
+.body-main__image {
+	flex: 0 1 435px;
+	padding: 66px 0 66px 0;
+	
+}
+.body-main__illustration {
+	max-width: 100%;
+}
+.body-main__content {
+
+
+}
+.body-main__title-subtitle {
+	color: #1E212C;
+	margin-bottom: 40px;
+	flex-wrap: wrap;
+	max-width: 705px;
+}
+.body-main__title {
+	font-weight: 700;
+line-height: 150%;
+letter-spacing: 1px;
+text-transform: uppercase;
+margin-bottom: 8px;
+
+}
+.body-main__subtitle {
+font-weight: 900;
+font-size: 46px;
+line-height: 130%;
+
+}
+.body-main__form {
+	display: flex;
+	gap: 25px;
+	flex-wrap: wrap;
+	max-width: 705px;
+}
+.body-main__first {
+	flex: 1 0 340px;
+
+}
+.body-main__label-first-name {
+line-height: 160%;
+display: inline-block;
+margin-bottom: 8px;
+}
+.body-main__first-name {
+	line-height: 160%;
+color: #9A9CA5;
+background: #FFFFFF;
+border: 1px solid #D7DADD;
+border-radius: 4px;
+padding: 13px 16px;
+width: 100%;
+}
+.body-main__last {
+flex: 1 0 340px;
+}
+.body-main__label-last-name {
+	line-height: 160%;
+	display: inline-block;
+	margin-bottom: 8px;
+}
+.body-main__last-name {
+	width: 100%;
+	line-height: 160%;
+	color: #9A9CA5;
+	background: #FFFFFF;
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	padding: 13px 16px;
+}
+.body-main__email-working {
+	flex: 1 0 340px;
+
+}
+.body-main__label-working-email {
+	line-height: 160%;
+	display: inline-block;
+	margin-bottom: 8px;
+}
+.body-main__input-working-email {
+	width: 100%;
+	line-height: 160%;
+	color: #9A9CA5;
+	background: #FFFFFF;
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	padding: 13px 16px;
+}
+.body-main__email-working {
+	flex: 1 0 340px;
+}
+.body-main__label-working-email {
+	line-height: 160%;
+	display: inline-block;
+	margin-bottom: 8px;
+}
+.body-main__input-working-email {
+	width: 100%;
+	line-height: 160%;
+	color: #9A9CA5;
+	background: #FFFFFF;
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	padding: 13px 16px;
+}
+.body-main__phone {
+	flex: 1 0 340px;
+
+}
+.body-main__label-phone {
+	line-height: 160%;
+	display: inline-block;
+	margin-bottom: 8px;
+}
+.body-main__input-phone {
+	width: 100%;
+	line-height: 160%;
+	color: #9A9CA5;
+	background: #FFFFFF;
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	padding: 13px 16px;
+}
+.body-main__message {
+flex: 0 1 705px;
+margin-bottom: 25px;
+}
+
+.body-main__label-area {
+	line-height: 160%;
+display: inline-block;
+margin-bottom: 8px;
+
+}
+.body-main__area {
+	line-height: 160%;
+color: #9A9CA5;
+width: 100%;
+resize: vertical;
+background: #FFFFFF;
+border: 1px solid #D7DADD;
+border-radius: 4px;
+padding: 13px 16px;
+height: 128px;
+}
+
+
+
+
+.body-main__box {
+	display: inline-flex;
+	gap: 50px;
+	flex-wrap: wrap;
+
+}
+.check-box{
+	
+}
+.check-box__check {
+	flex: 0 1 315px;
+	position: relative;
+}
+.check-box__input-box {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+
+}
+.check-box__label-box {
+	display: inline-flex;
+	
+	cursor: pointer;
+}
+.check-box__label-box span{
+	line-height: 160%;
+	padding-left: 28px;
+}
+.check-box__label-box::before{
+	content: '';
+	flex: 0 0 20px;
+	height: 20px;
+	width: 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+	align-self: center;
+}
+.check-box__input-box:checked +.check-box__label-box::before{
+	background:  #FE5244 url('../img/icons/check.svg') center / 70% no-repeat;
+}
+.body-main__butt {
+	flex: 0 1 340px;
+
+}
+
+/* -------- */
+
+.body-main__line {
+}
+.body-main__title {
+}
+.body-main__radio {
+	position: relative;
+
+}
+.body-main__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	
+}
+.body-main__input:not(:last-child) {
+	margin-bottom: 15px;
+}
+.body-main__input-radio {
+}
+.body-main__label {
+	display: inline-flex;
+	cursor: pointer;
+
+}
+.body-main__label span{
+	line-height: 160%;
+	font-size: 20px;
+	font-weight: 600;
+	padding-left: 28px;
+}
+.body-main__label::before{
+	position: relative;
+content: '';
+flex: 0 0 20px;
+width: 20px;
+height: 20px;
+border: 1px solid black;
+border-radius: 50%;
+align-self: center;
+}
+/* Підскажіть як зробити цей бекграунд, точку меньшу!!! */
+.body-main__input:checked + .body-main__label::before{
+	background: #FE5244;
+	border: 5px double rgb(48, 48, 147);
+	transition: all 0.5s ease 0s;
+}
